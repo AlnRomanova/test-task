@@ -11,6 +11,7 @@ const AppBar = () => {
         </div>
       <Navigation />
     </header>
+ 
   )
 }
 
