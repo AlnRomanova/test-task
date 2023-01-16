@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import css from './ProductPage.module.css';
 
 const ProductPage = () => {
-  return (
-    <div>ProductPage</div>
-  )
-}
+  return <h1 className={css.productPageTitle}>Product Page</h1>;
+};
 
-export default  ProductPage;
+export default ProductPage;

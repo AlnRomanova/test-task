@@ -1,0 +1,10 @@
+:root {
+    /* text colors */
+    --primary-text-color: #232323;
+    --secondary--text-color:  #000000;
+    --white-text-color: #FFFFFF;
+    --back-color: #022B32;
+
+    /* fonts */
+    --primary-font: 'Poppins';
+}

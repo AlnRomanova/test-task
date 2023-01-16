@@ -11,7 +11,6 @@ const Layout = () => {
     </GridItem> 
     <AppBarFooter/>
       <Outlet /> 
-     
     </>
   );
 };

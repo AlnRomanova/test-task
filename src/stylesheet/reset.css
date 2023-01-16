@@ -1,0 +1,14 @@
+ol,
+ul {
+    list-style: none;
+}
+
+nav a.active {
+    text-decoration-line: underline;
+  }
+
+  p, h1, h2 {
+    padding: 0;
+    margin: 0;
+  
+  }
