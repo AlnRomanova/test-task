@@ -1,0 +1,16 @@
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background:#022B32;
+  padding: 27px 20px;
+}
+
+.footerTitle {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #ffffff;
+}
