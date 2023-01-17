@@ -2,19 +2,22 @@ import { GridItem } from '@chakra-ui/react';
 import { Outlet } from 'react-router-dom';
 import AppBar from '../AppBar/AppBar';
 import AppBarFooter from '../AppBarFooter';
-import css from '../Layout/Layout.module.css';
+import { Container, Box } from '@chakra-ui/react'
 
 const Layout = () => {
   return (
-    <>
-    <div className={css.container}>
+    
+    <Container maxW='1560px' centerContent>
+  <Box maxW='1560px'>
     <GridItem pl="2" bg="#022B32" area={'header'}>
-      <AppBar/>
+      <AppBar/> 
     </GridItem> 
-    <AppBarFooter/>
-      <Outlet /> 
-      </div>
-    </>
+      <Outlet /> <GridItem pl="2" bg="#022B32" area={'footer'}>
+   <AppBarFooter/>
+    </GridItem>
+      </Box>
+</Container>
+    
   );
 };
 

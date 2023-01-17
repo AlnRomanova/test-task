@@ -1,9 +1,4 @@
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background: var(--back-color);
   padding: 27px 20px;
 }
 
@@ -13,4 +8,10 @@
   line-height: 1.5;
   text-transform: uppercase;
   color: var(--white-text-color);
+}
+
+.container {
+  max-width: 1560px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
