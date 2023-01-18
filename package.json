@@ -1,8 +1,7 @@
 {
-  "name": "ukad",
+  "name": "test-task",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://alnromanova.github.io/ukad/",
   "dependencies": {
     "@chakra-ui/react": "^2.4.9",
     "@reduxjs/toolkit": "^1.9.1",
