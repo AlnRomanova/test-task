@@ -1,28 +1,40 @@
 import React from "react";
 import Slider from "react-slick";
-import css from './Slider.module.css';
+import css from "./Slider.module.css";
+import sliderIconRight from "../../images/sliderIconRight.svg";
+import sliderIconLeft from "../../images/sliderIconLeft.svg";
 
-import Products from "../ProductsList/Products";
+import Products from "../Products";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function Arrow(props) {
-    let className = props.type === "next" ? css.nextArrow : css.prevArrow;
-    const char = props.type === "next" ? ">" : "<";
-    return (
-      <span className={className} onClick={props.onClick}>
-        {char}
-      </span>
+  let className = props.type === "next" ? css.nextArrow : css.prevArrow;
+  const char =
+    props.type === "next" ? (
+      <img src={sliderIconRight} alt="" />
+    ) : (
+      <img src={sliderIconLeft} alt="" />
     );
-  }
+  return (
+    <span className={className} onClick={props.onClick}>
+      {char}
+    </span>
+  );
+}
 
-export default function CustomArrows ({products}) {
-    const renderSlides = () =>
-    products.slice(0,8).map(({ id, nombre, linkImagen}) => (
-        <div  key={id}>
-         <Products nombre={nombre} linkImagen={linkImagen}  />
-        </div>
-        ));
+export default function CustomArrows({ products }) {
+  const renderSlides = () =>
+    products.slice(0, 8).map(({ id, nombre, linkImagen }) => (
+      <div className={css.productItemHome} key={id}>
+        <Products
+          nombre={nombre}
+          linkImagen={linkImagen}
+          imgHeight={"441px"}
+          imgWidth={"421px"}
+        />
+      </div>
+    ));
 
   return (
     <div className={css.slider}>

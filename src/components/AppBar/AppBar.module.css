@@ -1,5 +1,10 @@
 .header {
-    display: flex;
-    padding: 25px 20px;
-    
-  }
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  padding: 25px 20px;
+  background: #022B32;
+  width: 100%;
+  
+}
