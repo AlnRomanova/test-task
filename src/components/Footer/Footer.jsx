@@ -1,7 +1,7 @@
 import React from "react";
-import css from "../AppBarFooter/AppBarFooter.module.css";
+import css from "../Footer/Footer.module.css";
 
-const AppBarFooter = () => {
+const Footer = () => {
   return (
     <div className={css.container}>
       <footer className={css.footer}>
@@ -11,4 +11,4 @@ const AppBarFooter = () => {
   );
 };
 
-export default AppBarFooter;
+export default Footer;

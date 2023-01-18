@@ -1,10 +1,11 @@
 {
-  "name": "test-task",
+  "name": "ukad",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://alnromanova.github.io/test-task/",
+  "homepage": "https://alnromanova.github.io/ukad/",
   "dependencies": {
     "@chakra-ui/react": "^2.4.9",
+    "@reduxjs/toolkit": "^1.9.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",

@@ -1,14 +1,16 @@
-import React from "react";
-import css from "./HomePage.module.css";
-import CustomArrows from "../../components/Slider/Slider";
+import React from 'react';
+import css from './HomePage.module.css';
+import CustomArrows from '../../components/Slider/Slider';
 import { useState, useEffect } from "react";
-import { fetchProducts } from "../../services/productsAPI";
+import { fetchProducts } from '../../services/productsAPI';
+
 
 const HomePage = () => {
-  const [products, setProdacts] = useState("");
-
+  const [products, setProdacts] = useState('');
+   
   useEffect(() => {
-    fetchProducts().then(setProdacts);
+    fetchProducts()
+    .then(setProdacts)
   }, []);
 
   if (!products) {
@@ -17,10 +19,12 @@ const HomePage = () => {
 
   return (
     <>
-      <h1 className={css.homePageTitle}>Home Page</h1>
-      <CustomArrows products={products} />
+    <h1 className={css.homePageTitle}>Home Page</h1>
+   <CustomArrows products={products}/>
+
     </>
-  );
+    
+  )
 };
 
 export default HomePage;

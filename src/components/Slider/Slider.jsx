@@ -4,7 +4,7 @@ import css from "./Slider.module.css";
 import sliderIconRight from "../../images/sliderIconRight.svg";
 import sliderIconLeft from "../../images/sliderIconLeft.svg";
 
-import Products from "../Products";
+import Product from '../Product'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -16,6 +16,7 @@ function Arrow(props) {
     ) : (
       <img src={sliderIconLeft} alt="" />
     );
+
   return (
     <span className={className} onClick={props.onClick}>
       {char}
@@ -25,11 +26,12 @@ function Arrow(props) {
 
 export default function CustomArrows({ products }) {
   const renderSlides = () =>
-    products.slice(0, 8).map(({ id, nombre, linkImagen }) => (
+    products.map(({ id, name, image, temperament }) => (
       <div className={css.productItemHome} key={id}>
-        <Products
-          nombre={nombre}
-          linkImagen={linkImagen}
+        <Product
+          name={name}
+          image={image.url}
+          temperament={temperament}
           imgHeight={"441px"}
           imgWidth={"421px"}
         />
@@ -45,6 +47,7 @@ export default function CustomArrows({ products }) {
         slidesToScroll={3}
         infinite={false}
         dots={false}
+       
       >
         {renderSlides()}
       </Slider>

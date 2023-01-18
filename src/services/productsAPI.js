@@ -1,19 +1,18 @@
 import axios from "axios";
 
-const BASE_URL = 'https://pizzaallapala.p.rapidapi.com/';
-const KEY = '29f81496e7msh916b07e4031ce24p1e9f51jsn42c45a22aba7';
+const BASE_URL = 'https://api.thedogapi.com/v1/';
 
 axios.defaults.baseURL = BASE_URL;
 
 export const fetchProducts = async () => {
-  const response = await axios('productos', {
-    headers: {
-      'X-RapidAPI-Key': KEY,
-      'X-RapidAPI-Host': 'pizzaallapala.p.rapidapi.com'
-    },
+  const response = await axios('breeds',  { params: {
+    limit: 8,
+    page: 0
+  }
+
   });
 
   console.log(response)
-  return response.data.productos;
+  return response.data;
 };
   

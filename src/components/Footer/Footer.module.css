@@ -1,6 +1,4 @@
 .footer {
-  position: fixed;
-  bottom: 0;
   left: 0;
   width: 100%;
   background: #022B32;
@@ -15,8 +13,4 @@
   color: var(--white-text-color);
 }
 
-.container {
-  max-width: 1560px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
+

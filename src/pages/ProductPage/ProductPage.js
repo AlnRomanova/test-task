@@ -1,5 +1,5 @@
 import React from "react";
-import Products from "../../components/Products/Products";
+import Product from "../../components/Product";
 import css from "./ProductPage.module.css";
 import { useState, useEffect } from "react";
 import { fetchProducts } from "../../services/productsAPI";
@@ -18,11 +18,12 @@ const ProductPage = () => {
     <>
       <h1 className={css.productPageTitle}>Product Page</h1>
       <ul className={css.productList}>
-        {products.slice(0, 8).map(({ id, nombre, linkImagen }) => (
+        {products.map(({ id, name, image, temperament}) => (
           <li key={id} className={css.productItem}>
-            <Products
-              nombre={nombre}
-              linkImagen={linkImagen}
+            <Product
+              name={name}
+              image={image.url}
+              temperament={temperament}
               imgHeight={"362px"}
               imgWidth={"350px"}
             />

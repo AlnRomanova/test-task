@@ -11,7 +11,7 @@
 .productList {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0 20px 81px 20px;
   row-gap: 40px;
 }
@@ -24,11 +24,4 @@
   border: 3px solid #f2f2f2;
 }
 
-.productTitle {
-  padding: 28px;
-  font-family: var(--primary-font);
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 1.5;
-  color: var(--primary-text-color);
-}
+

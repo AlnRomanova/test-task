@@ -1,9 +1,9 @@
 import React from "react";
 import Navigation from "../Navigation";
-import css from "../AppBar/AppBar.module.css";
+import css from "./Header.module.css";
 import logoIcon from "../../images/logoIcon.svg";
 
-const AppBar = () => {
+const Header = () => {
   return (
     <header className={css.header}>
       <div>
@@ -14,4 +14,4 @@ const AppBar = () => {
   );
 };
 
-export default AppBar;
+export default Header;
