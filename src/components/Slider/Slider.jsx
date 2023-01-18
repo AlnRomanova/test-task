@@ -3,10 +3,11 @@ import Slider from "react-slick";
 import css from "./Slider.module.css";
 import sliderIconRight from "../../images/sliderIconRight.svg";
 import sliderIconLeft from "../../images/sliderIconLeft.svg";
-
-import Product from '../Product'
+import { useSelector } from "react-redux";
+import Product from "../Product";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { selectProducts } from "../redux/productsSelector";
 
 function Arrow(props) {
   let className = props.type === "next" ? css.nextArrow : css.prevArrow;
@@ -24,7 +25,8 @@ function Arrow(props) {
   );
 }
 
-export default function CustomArrows({ products }) {
+export default function SliderCustom() {
+  const products = useSelector(selectProducts);
   const renderSlides = () =>
     products.map(({ id, name, image, temperament }) => (
       <div className={css.productItemHome} key={id}>
@@ -43,24 +45,30 @@ export default function CustomArrows({ products }) {
       <Slider
         nextArrow={<Arrow type="next" />}
         prevArrow={<Arrow type="prev" />}
-       
         slidesToShow={3}
         slidesToScroll={3}
         infinite={false}
         dots={false}
-        responsive={[{breakpoint: 1400,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            infinite: false,
-            dots: false
-          }},{breakpoint: 1000,
+        responsive={[
+          {
+            breakpoint: 1400,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: false,
+              dots: false,
+            },
+          },
+          {
+            breakpoint: 1000,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
               infinite: false,
-              dots: false
-            }}]}
+              dots: false,
+            },
+          },
+        ]}
       >
         {renderSlides()}
       </Slider>

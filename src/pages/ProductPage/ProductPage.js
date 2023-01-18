@@ -1,24 +1,18 @@
 import React from "react";
 import Product from "../../components/Product";
 import css from "./ProductPage.module.css";
-import { useState, useEffect } from "react";
-import { fetchProducts } from "../../services/productsAPI";
+import { useSelector } from "react-redux";
+import { selectProducts } from "../../components/redux/productsSelector";
+
 
 const ProductPage = () => {
-  const [products, setProdacts] = useState("");
-
-  useEffect(() => {
-    fetchProducts().then(setProdacts);
-  }, []);
-
-  if (!products) {
-    return null;
-  }
+const products = useSelector(selectProducts);
+  
   return (
     <>
       <h1 className={css.productPageTitle}>Product Page</h1>
       <ul className={css.productList}>
-        {products.map(({ id, name, image, temperament}) => (
+        {products.map(({ id, name, image, temperament }) => (
           <li key={id} className={css.productItem}>
             <Product
               name={name}
