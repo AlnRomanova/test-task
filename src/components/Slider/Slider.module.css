@@ -1,0 +1,34 @@
+.slider {
+    font-family: sans-serif;
+    padding: 10px 50px;
+  }
+  
+  .slider > div {
+    background-color: #fff;
+    color: #3498db;
+    text-align: center;
+  }
+
+
+  
+  .nextArrow {
+    position: absolute;
+    color: #000000;
+    font-size: 2.5em;
+    font-weight: bold;
+  
+    cursor: pointer;
+    top: 50%;
+    right: -45px;
+  }
+  
+  .prevArrow {
+    position: absolute;
+    color: #000000;
+    font-size: 2.5em;
+    font-weight: bold;
+  
+    cursor: pointer;
+    top: 50%;
+    left: -45px;
+  }
