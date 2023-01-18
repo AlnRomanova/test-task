@@ -10,8 +10,8 @@ const Layout = () => {
   return (
     <>
       <Header/>
-      <Container maxW="1560px" centerContent>
-        <Box maxW="1560px">
+      <Container maxW="1560" centerContent>
+        <Box>
           <Suspense fallback={<Loader />}>
             <Outlet />
           </Suspense>

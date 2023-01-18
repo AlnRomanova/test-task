@@ -43,11 +43,24 @@ export default function CustomArrows({ products }) {
       <Slider
         nextArrow={<Arrow type="next" />}
         prevArrow={<Arrow type="prev" />}
+       
         slidesToShow={3}
         slidesToScroll={3}
         infinite={false}
         dots={false}
-       
+        responsive={[{breakpoint: 1400,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: false,
+            dots: false
+          }},{breakpoint: 1000,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: false,
+              dots: false
+            }}]}
       >
         {renderSlides()}
       </Slider>

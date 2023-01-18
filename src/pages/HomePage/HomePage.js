@@ -21,7 +21,6 @@ const HomePage = () => {
     <>
     <h1 className={css.homePageTitle}>Home Page</h1>
    <CustomArrows products={products}/>
-
     </>
     
   )

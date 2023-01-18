@@ -14,7 +14,6 @@ export const fetchProducts = async () => {
     },
   });
 
-  console.log(response)
   return response.data;
 };
   
