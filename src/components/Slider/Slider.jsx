@@ -3,11 +3,11 @@ import Slider from "react-slick";
 import css from "./Slider.module.css";
 import sliderIconRight from "../../images/sliderIconRight.svg";
 import sliderIconLeft from "../../images/sliderIconLeft.svg";
-import { useSelector } from "react-redux";
+
 import Product from "../Product";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { selectProducts } from "../redux/productsSelector";
+
 
 function Arrow(props) {
   let className = props.type === "next" ? css.nextArrow : css.prevArrow;
@@ -25,10 +25,11 @@ function Arrow(props) {
   );
 }
 
-export default function SliderCustom() {
-  const products = useSelector(selectProducts);
-  const renderSlides = () =>
-    products.map(({ id, name, image, temperament }) => (
+export default function SliderCustom({products}) {
+  
+  const renderSlides = () => {
+    if (products.length === 0) return null;
+  return products.map(({ id, name, image, temperament }) => (
       <div className={css.productItemHome} key={id}>
         <Product
           name={name}
@@ -39,6 +40,8 @@ export default function SliderCustom() {
         />
       </div>
     ));
+
+  }
 
   return (
     <div className={css.slider}>
