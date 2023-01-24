@@ -5,8 +5,6 @@
   gap: 34px;
 }
 
-
-
 .slider > div {
   text-align: center;
 }
@@ -32,14 +30,12 @@
   z-index: 10;
 }
 
-
 .productItemHome {
   max-width: 421px !important;
   height: 551px;
   border: 3px solid #f2f2f2;
   object-fit: cover;
 }
-
 
 @media screen and (max-width: 1400px) {
   .slider {
@@ -66,15 +62,14 @@
   .nextArrow {
     right: -50px;
   }
-  
+
   .prevArrow {
     left: -50px;
     font-size: 2.5em;
   }
 
   .slider img {
-    max-height: 380px ;
-
+    max-height: 380px;
   }
 
   .slider p {
