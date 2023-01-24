@@ -5,6 +5,9 @@
   gap: 34px;
 }
 
+.slick-disabled {
+  display: none;
+}
 .slider > div {
   text-align: center;
 }
@@ -76,4 +79,5 @@
     padding: 10px 28px 26px 28px;
     font-weight: 19px;
   }
+ 
 }

@@ -18,17 +18,19 @@ function Arrow(props) {
       <img src={sliderIconLeft} alt="" />
     );
 
+    if(props.className.split(" ").includes("slick-disabled")){ return null}
+    else{
   return (
     <span className={className} onClick={props.onClick}>
       {char}
     </span>
-  );
+  );}
 }
 
 export default function SliderCustom({products}) {
   
   const renderSlides = () => {
-    if (products.length === 0) return null;
+    if (products.length === 0) return;
   return products.map(({ id, name, image, temperament }) => (
       <div className={css.productItemHome} key={id}>
         <Product
