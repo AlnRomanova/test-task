@@ -3,7 +3,7 @@ import css from "./Product.module.css";
 
 const Product = ({ name, image, temperament, imgHeight, imgWidth }) => {
   return (
-    <div  >
+    <div>
       <img
         className={css.image}
         src={image}
