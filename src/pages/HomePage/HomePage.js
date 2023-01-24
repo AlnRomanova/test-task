@@ -6,6 +6,9 @@ import SliderCustom from "../../components/Slider/Slider";
 
 const HomePage = () => {
   const products = useSelector(selectProducts);
+ if (products.length === 0) {
+  return null
+ }
 
   return (
     <div>

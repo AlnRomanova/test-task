@@ -7,6 +7,9 @@ import { selectProducts } from "../../components/redux/productsSelector";
 
 const ProductPage = () => {
 const products = useSelector(selectProducts);
+if (products.length === 0) {
+  return null
+ }
   
   return (
     <>

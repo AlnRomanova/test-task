@@ -30,7 +30,6 @@ function Arrow(props) {
 export default function SliderCustom({products}) {
   
   const renderSlides = () => {
-    if (products.length === 0) return;
   return products.map(({ id, name, image, temperament }) => (
       <div className={css.productItemHome} key={id}>
         <Product
