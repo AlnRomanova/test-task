@@ -10,7 +10,7 @@ export const fetchProducts = createAsyncThunk(
   'products/fetchAll',
   async (_, { rejectWithValue }) => {
     try {
-        const response = await axios('/breeds?limit=8&page=0');
+        const response = await axios('/breeds?limit=8&page=1');
       return response.data;
     } catch (error) {
       return rejectWithValue(error);
