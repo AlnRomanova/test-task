@@ -53,21 +53,21 @@
   }
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 600px) {
   .slider {
-    padding: 0 130px 328px 130px;
-    max-width: 600px;
+    padding: 0 10px 328px 10px;
+    max-width: 500px;
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
 
   .nextArrow {
-    right: -50px;
+    right: -5%;
   }
 
   .prevArrow {
-    left: -50px;
+    left: -5%;
     font-size: 2.5em;
   }
 
