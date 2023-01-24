@@ -11,19 +11,19 @@ import { selectIsLoading } from '../../components/redux/productsSelector';
 const Layout = () => {
   const isLoading = useSelector(selectIsLoading);
   return (
-    <div style={{ minHeight: '100%', display: 'flex', flexDirection: 'column' }}>
+    <>
       <Header />
       <Container maxW="1560" centerContent  >
         <Box>
           <Suspense fallback={<Loader />}>
-            <Outlet style={{ flex: '1 1 auto' }} />
+            <Outlet />
           </Suspense> 
           {isLoading && <Loader/>} 
         </Box>
       </Container>
       <Footer />
      
-    </div>
+    </>
   );
 };
 
