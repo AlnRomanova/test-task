@@ -71,7 +71,7 @@ export default function SliderCustom({products}) {
               infinite: false,
               dots: false,
             },
-          },
+          }
         ]}
       >
         {renderSlides()}

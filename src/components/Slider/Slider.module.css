@@ -51,12 +51,21 @@
     padding: 0 10px 328px 10px;
     max-width: 600px;
   }
+
+  .nextArrow {
+    right: 5%;
+  }
+
+  .prevArrow {
+    left: 5%;
+
+  }
 }
 
 @media screen and (max-width: 600px) {
   .slider {
     padding: 0 10px 328px 10px;
-    max-width: 395px;
+    max-width: 360px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -68,7 +77,6 @@
 
   .prevArrow {
     left: -12%;
-    font-size: 2.5em;
   }
 
   .slider img {
@@ -81,3 +89,5 @@
   }
  
 }
+
+

@@ -1,20 +1,14 @@
 .wrapper {
-    max-width: 1560px ;
+  width: 100vw;
 }
 
-
-
-@media screen and (max-width: 767px) {
-   
-    .wrapper {
-         max-width: 767px;
-    }
-    
+/* @media screen and (max-width: 767px) {
+  .wrapper {
+    max-width: 767px;
+  }
 }
 @media screen and (max-width: 480px) {
-   
-    .wrapper {
-         max-width: 480px;
-    }
-    
-}
+  .wrapper {
+    max-width: 480px;
+  }
+} */

@@ -8,4 +8,10 @@
 }
 
 
+@media screen and (max-width: 600px) {
+  .homePageTitle {
+    margin: 230px 0 16px 20px;
+  }
+}
+
 
