@@ -1,6 +1,5 @@
 .productPageTitle {
-  margin: 40px 0 16px 0;
-  padding: 0 30px;
+  padding: 40px 30px 16px 30px;
   font-family: var(--primary-font);
   font-weight: 700;
   font-size: 36px;
@@ -27,21 +26,21 @@
 
 @media screen and (min-width: 320px) and (max-width: 750px) {
   .productPageTitle {
-    margin: 40px 0 23px 0;
+    padding: 40px 20px 23px 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 0 20px;
+   
   }
 }
 
 @media screen and (max-width: 1450px) {
   .productPageTitle {
-    margin: 40px 0 23px 0;
+    padding: 40px 20px 23px 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 0 20px;
+
   }
 }
 
@@ -52,7 +51,7 @@
   }
 
   .productPageTitle {
-    margin: 38px 0 13px 0;
+    padding: 38px 0 13px 0;
     font-size: 30px;
   }
 }

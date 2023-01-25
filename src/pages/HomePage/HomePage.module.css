@@ -1,5 +1,5 @@
 .homePageTitle {
-  margin: 230px 0 16px 125px;
+  padding: 230px 0 16px 125px;
   font-family: var(--primary-font);
   font-weight: 700;
   font-size: 36px;
@@ -9,6 +9,18 @@
 
 @media screen and (max-width: 600px) {
   .homePageTitle {
-    margin: 230px 0 16px 20px;
+    padding: 230px 0 16px 20px;
   }
 }
+
+@media screen  and (min-width: 1001px) and  (max-width: 1400px) {
+  .homePageTitle {
+    padding: 230px 0 16px 60px;
+  }
+  }
+
+  @media screen and (min-width: 1401px) and (max-width: 1559px) {
+    .homePageTitle {
+      padding: 230px 0 16px 25px;
+    }
+  }
