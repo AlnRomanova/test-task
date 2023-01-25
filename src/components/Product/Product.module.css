@@ -23,3 +23,30 @@
   line-height: 1.5;
   color: var(--primary-text-color);
 }
+
+@media screen and (max-width: 450px) {
+
+  .productTitle {
+    font-weight: 600;
+    padding: 4px 28px;
+    font-size: 10px;
+
+  }
+  .productDescription {
+    padding: 8px 18px 16px 28px;
+    font-weight: 600;
+    font-size: 11px;
+   
+  }
+  
+  .image {
+    max-height: 300px;
+  }
+}
+
+
+@media screen  and (min-width: 451px) and (max-width: 1000px) {
+  .image {
+    max-height: 315px;
+  }
+}

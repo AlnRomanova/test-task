@@ -42,6 +42,24 @@
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 0 20px;
+  }
+}
 
+@media screen and (max-width: 450px) {
+  .productItem {
+    width: 295px;
+    height: 390px;
+  }
+
+  .productPageTitle {
+    margin: 38px 0 13px 0;
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 1000px) {
+  .productItem {
+    width: 340px;
+    height: 440px;
   }
 }
