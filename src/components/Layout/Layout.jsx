@@ -15,7 +15,7 @@ const Layout = () => {
     <div className={css.wrapper}>
       <Header />
       <Container maxW="1560" centerContent  >
-        <Box>
+        <Box className={css.content}>
           <Suspense fallback={<Loader />}>
             <Outlet />
           </Suspense> 
@@ -23,7 +23,6 @@ const Layout = () => {
         </Box>
       </Container>
       <Footer />
-     
     </div>
   );
 };
