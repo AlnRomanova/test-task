@@ -1,7 +1,10 @@
 .footer {
+  position: fixed;
   width: 100%;
+  bottom: 0;
   background: #022B32;
   padding: 27px 20px;
+  margin-top: auto
 }
 
 .footerTitle {
