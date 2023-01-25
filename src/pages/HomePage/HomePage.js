@@ -13,7 +13,7 @@ const HomePage = () => {
   return (
     <div>
       <h1 className={css.homePageTitle}>Home Page</h1>
-      <SliderCustom products={products} />
+      <SliderCustom items={products} />
     </div>
   );
 };

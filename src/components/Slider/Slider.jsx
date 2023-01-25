@@ -27,10 +27,10 @@ function Arrow(props) {
   );}
 }
 
-export default function SliderCustom({products}) {
+export default function SliderCustom({items}) {
   
   const renderSlides = () => {
-  return products.map(({ id, name, image, temperament }) => (
+  return items.map(({ id, name, image, temperament }) => (
       <div className={css.productItemHome} key={id}>
         <Product
           name={name}
