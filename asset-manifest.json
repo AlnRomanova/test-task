@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/test-task/static/css/main.d76b224d.css",
-    "main.js": "/test-task/static/js/main.5e5f4b4f.js",
-    "static/css/65.d25825c3.chunk.css": "/test-task/static/css/65.d25825c3.chunk.css",
+    "main.js": "/test-task/static/js/main.8c12f792.js",
+    "static/css/65.a93bde10.chunk.css": "/test-task/static/css/65.a93bde10.chunk.css",
     "static/js/65.3eb8262d.chunk.js": "/test-task/static/js/65.3eb8262d.chunk.js",
-    "static/css/999.b35a51fb.chunk.css": "/test-task/static/css/999.b35a51fb.chunk.css",
+    "static/css/999.44e9da73.chunk.css": "/test-task/static/css/999.44e9da73.chunk.css",
     "static/js/999.247462b6.chunk.js": "/test-task/static/js/999.247462b6.chunk.js",
     "static/js/113.ced38c75.chunk.js": "/test-task/static/js/113.ced38c75.chunk.js",
     "static/media/Poppins-Regular.ttf": "/test-task/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
@@ -18,15 +18,15 @@
     "static/media/sliderIconRight.svg": "/test-task/static/media/sliderIconRight.ef4645f75da76d938da1101da9f63c4e.svg",
     "index.html": "/test-task/index.html",
     "main.d76b224d.css.map": "/test-task/static/css/main.d76b224d.css.map",
-    "main.5e5f4b4f.js.map": "/test-task/static/js/main.5e5f4b4f.js.map",
-    "65.d25825c3.chunk.css.map": "/test-task/static/css/65.d25825c3.chunk.css.map",
+    "main.8c12f792.js.map": "/test-task/static/js/main.8c12f792.js.map",
+    "65.a93bde10.chunk.css.map": "/test-task/static/css/65.a93bde10.chunk.css.map",
     "65.3eb8262d.chunk.js.map": "/test-task/static/js/65.3eb8262d.chunk.js.map",
-    "999.b35a51fb.chunk.css.map": "/test-task/static/css/999.b35a51fb.chunk.css.map",
+    "999.44e9da73.chunk.css.map": "/test-task/static/css/999.44e9da73.chunk.css.map",
     "999.247462b6.chunk.js.map": "/test-task/static/js/999.247462b6.chunk.js.map",
     "113.ced38c75.chunk.js.map": "/test-task/static/js/113.ced38c75.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d76b224d.css",
-    "static/js/main.5e5f4b4f.js"
+    "static/js/main.8c12f792.js"
   ]
 }
