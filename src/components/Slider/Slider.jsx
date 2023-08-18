@@ -28,13 +28,14 @@ function Arrow(props) {
 }
 
 export default function SliderCustom({items}) {
+  console.log(items)
   
   const renderSlides = () => {
   return items.map(({ id, name, image, temperament }) => (
       <div className={css.productItemHome} key={id}>
         <Product
           name={name}
-          image={image.url}
+          image={image ? image.url : ''} 
           temperament={temperament}
           imgHeight={"441px"}
           imgWidth={"421px"}

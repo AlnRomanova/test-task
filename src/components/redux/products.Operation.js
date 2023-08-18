@@ -11,6 +11,7 @@ export const fetchProducts = createAsyncThunk(
   async (_, { rejectWithValue }) => {
     try {
         const response = await axios('/breeds?limit=8&page=1');
+        console.log(response)
       return response.data;
     } catch (error) {
       return rejectWithValue(error);

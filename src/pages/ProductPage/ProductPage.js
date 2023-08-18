@@ -19,7 +19,7 @@ if (products.length === 0) {
           <li key={id} className={css.productItem}>
             <Product
               name={name}
-              image={image.url}
+              image={image ? image.url : ''} 
               temperament={temperament}
               imgHeight={"362px"}
               imgWidth={"350px"}
